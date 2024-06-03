@@ -1,9 +1,12 @@
 class Solution {
-    fun solution(absolutes: IntArray, signs: BooleanArray): Int {       
-        for(i in 0 until absolutes.count()) {
-            if(!signs[i]) absolutes[i] *= -1
-        }
+    fun solution(absolutes: IntArray, signs: BooleanArray): Int {
+        var answer = 0
         
-        return absolutes.sum()
+        absolutes.forEachIndexed{index, no ->
+            if(signs[index]) answer += no
+            else answer -= no
+            
+        }
+        return answer
     }
 }
