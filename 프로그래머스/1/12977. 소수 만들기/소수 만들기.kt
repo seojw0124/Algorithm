@@ -18,7 +18,6 @@ class Solution {
             cnt = (1..num).filter { num % it == 0 }.count()
             if (cnt == 2) answer++
         }
-
         return answer
     }
 }
