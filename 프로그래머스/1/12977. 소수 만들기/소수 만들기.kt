@@ -7,7 +7,6 @@ class Solution {
             for (j in i + 1 until nums.size) {
                 for (k in j + 1 until nums.size) {
                     val sum = nums[i] + nums[j] + nums[k]
-                    //if (!sumArr.contains(sum)) sumList.add(sum)
                     sumList.add(sum)
                 }
             }
