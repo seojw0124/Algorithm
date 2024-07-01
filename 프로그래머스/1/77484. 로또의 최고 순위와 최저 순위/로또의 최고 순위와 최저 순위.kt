@@ -20,9 +20,6 @@ class Solution {
         val max = if(zeroCnt + answerCnt == 0 || zeroCnt + answerCnt == 1) 6 else arr.indexOf(zeroCnt + answerCnt) + 1
         val min = if(answerCnt == 0 || answerCnt == 1) 6 else arr.indexOf(answerCnt) + 1 
         
-        answer += max
-        answer += min
-        
-        return answer
+        return intArrayOf(max, min)
     }
 }
