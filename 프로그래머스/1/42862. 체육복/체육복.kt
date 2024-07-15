@@ -4,12 +4,12 @@ class Solution {
         var reserveList = (reserve.sorted() - lost.sorted()).toMutableList() 
         var answer = n - lostList.size
 
-        for( i in lostList){
-            if(reserveList.contains(i - 1)){
+        for ( i in lostList) {
+            if (reserveList.contains(i - 1)) {
                 reserveList.remove(i - 1)
                 answer += 1
             }
-            else if(reserveList.contains(i + 1)){
+            else if (reserveList.contains(i + 1)) {
                 reserveList.remove(i + 1)
                 answer += 1
             }
